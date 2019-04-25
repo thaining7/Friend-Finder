@@ -15,7 +15,6 @@ module.exports = function (app) {
             friendDiff: 500
         };
         var userData = req.body;
-        // var userName = userData.name;
         var userScores = userData.scores;
         var scoreInt = userScores.map(function(int) {
             return parseInt(int, 10);
@@ -28,7 +27,6 @@ module.exports = function (app) {
         };
 
         for (var i = 0; i < friendData.length; i++) {
-            // totalDifference = 0;
             for (var j = 0; j < friendData[i].scores[j]; j++) {
                 totalDifference += Math.abs(scoreInt[j] - parseInt(friendData[i].scores[j]));
             }
