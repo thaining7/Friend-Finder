@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-    <title>Survey Questions</title>
+    
+    <title>Friend Finder</title>
 
 </head>
 
@@ -168,7 +171,8 @@
         <div class="container">
             <p>
                 <a href="/api/friends">API Friends List</a>
-
+                <br>
+                <a href="https://github.com/thaining7/FriendFinder">Github Code</a>
             </p>
 
         </div>
@@ -265,7 +269,7 @@
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
 
-                    $("#results-modal").modal("toggle");
+                    $("#resultsModal").modal("toggle");
 
                 });
             } 
