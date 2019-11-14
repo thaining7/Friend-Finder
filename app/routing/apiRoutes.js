@@ -8,7 +8,7 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
 
-        var totalDifference = 0;
+        var totalDiff = 0;
         var mostComp = {
             name: "",
             photo: "",
@@ -17,24 +17,22 @@ module.exports = function (app) {
         var userData = req.body;
         var userScores = userData.scores;
         
-
         for (var i = 0; i < friendData.length; i++) {
 
-            totalDifference = 0;
+            totalDiff = 0;
 
             for (var j = 0; j < friendData[i].scores[j]; j++) {
-                totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendData[i].scores[j]));
+                totalDiff += Math.abs(parseInt(userScores[j]) - parseInt(friendData[i].scores[j]));
             }
-            if (totalDifference <= mostComp.friendDiff) {
+            if (totalDiff <= mostComp.friendDiff) {
                 mostComp.name = friendData[i].name;
                 mostComp.photo = friendData[i].photo;
-                mostComp.friendDiff = totalDifference;
+                mostComp.friendDiff = totalDiff;
             }
             
         };
-        console.log ("total difference is " + totalDifference);
+        console.log ("total difference is " + totalDiff);
         console.log ("friend difference is " + mostComp.friendDiff);
-
 
         friendData.push(userData);
         res.json(mostComp);

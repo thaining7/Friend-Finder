@@ -265,7 +265,8 @@
 
 
                 $.post("/api/friends", userData, function (data) {
-
+                    console.log("Data " + data);
+                    console.log("userData " + userData);
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
 
