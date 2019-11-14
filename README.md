@@ -1,8 +1,9 @@
-# FriendFinder
+# Friend Finder
 
-### Description
+# Motivation
 
-Friend Finder is a full stack application that finds your most compatible match based on a series of survey questions. It uses Node.js and Express on the backend to compare your results and find your best match.
+#### Friend Finder is a full stack application that finds your most compatible match based on a series of survey questions. It uses Node.js and Express.js on the backend to compare your results and find your best match.
+
 
 ### Operating Instructions
 
