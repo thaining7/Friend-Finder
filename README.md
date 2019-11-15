@@ -20,7 +20,7 @@
 
 #### Logic for calculating the most compatible match based on survey scores:
 
-`
+```
 for (var i = 0; i < friendData.length; i++) {
 
             totalDiff = 0;
@@ -35,7 +35,7 @@ for (var i = 0; i < friendData.length; i++) {
             }
             
         };
-`
+```
 
 ### Operating Instructions
 
