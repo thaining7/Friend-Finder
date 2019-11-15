@@ -1,5 +1,24 @@
 var friendArray = [
-
+    {
+        "name": "Eureka Garlic",
+        "photo": "",
+        "scores": [5, 1, 2, 2, 4, 1, 3, 5, 3, 5]
+    },
+    {
+        "name": "Ed Amame",
+        "photo": "",
+        "scores": [2, 1, 3, 1, 2, 3, 2, 3, 1, 1]
+    },
+    {
+        "name": "Luke Warm",
+        "photo": "",
+        "scores": [4, 1, 5, 5, 3, 1, 2, 1, 5, 3]
+    },
+    {
+        "name": "Carmine Dioxide",
+        "photo": "",
+        "scores": [5, 5, 3, 1, 1, 2, 3, 3, 1, 4]
+    },
     {
         "name": "Haywood Chabuzzoff",
         "photo": "",
@@ -50,13 +69,6 @@ var friendArray = [
         "photo": "",
         "scores": [3, 1, 3, 4, 5, 1, 3, 5, 4, 1]
     },
-    {
-        "name": "Aziz Nowarranty",
-        "photo": "",
-        "scores": [4, 2, 3, 4, 3, 1, 3, 2, 5, 5]
-    },
-    
-
 ];
 
 module.exports = friendArray;

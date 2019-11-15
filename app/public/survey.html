@@ -182,7 +182,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
+                    <h5 class="modal-title" id="modal-title">Best Match</h5>
                     <button type="button" class="close" data-dismiss="modal">
                         x
                     </button>
@@ -265,8 +265,8 @@
 
 
                 $.post("/api/friends", userData, function (data) {
-                    console.log("Data " + data);
                     console.log("userData " + userData);
+                    // $("modal-title").text()
                     $("#match-name").text(data.name);
                     $("#match-img").attr("src", data.photo);
 
