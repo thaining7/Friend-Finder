@@ -21,6 +21,15 @@
 #### Logic for calculating the most compatible match based on survey scores:
 
 ```
+var totalDiff = 0;
+var mostComp = {
+            name: "",
+            photo: "",
+            friendDiff: 500
+};        
+var userData = req.body;
+var userScores = userData.scores;
+        
 for (var i = 0; i < friendData.length; i++) {
 
             totalDiff = 0;
