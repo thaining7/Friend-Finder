@@ -9,13 +9,13 @@ module.exports = function (app) {
     app.post("/api/friends", function (req, res) {
 
         // define a variable to store the difference in scores between friends
-        var totalDiff = 0;
+        var scoreDiff = 0;
         // define an object to store the calculated most compatible match
-        var mostComp = {
+        var bestMatch = {
             name: "",
             photo: "",
             // arbitrary starting value 
-            friendDiff: 50
+            matchDiff: 50
         };
 
         var userData = req.body;
@@ -24,29 +24,29 @@ module.exports = function (app) {
         // loop through friendData array
         for (var i = 0; i < friendData.length; i++) {
 
-            // define totalDiff as 0 at the start of each loop
-            totalDiff = 0;
+            // define scoreDiff as 0 at the start of each loop
+            scoreDiff = 0;
 
             // loop through the scores of each friend object
             for (var j = 0; j < friendData[i].scores[j]; j++) {
-                // assign calculated difference to totalDiff
-                totalDiff += Math.abs(parseInt(userScores[j]) - parseInt(friendData[i].scores[j]));
+                // assign calculated difference to scoreDiff
+                scoreDiff += Math.abs(parseInt(userScores[j]) - parseInt(friendData[i].scores[j]));
                 
             }
             // loop through calculated difference until the lowest difference is reached
-            if (totalDiff < mostComp.friendDiff) {
-                mostComp.name = friendData[i].name;
-                mostComp.photo = friendData[i].photo;
-                mostComp.friendDiff = totalDiff;
+            if (scoreDiff < bestMatch.matchDiff) {
+                bestMatch.name = friendData[i].name;
+                bestMatch.photo = friendData[i].photo;
+                bestMatch.matchDiff = scoreDiff;
             }
-            // console.log ("friend difference is " + mostComp.friendDiff);
+            // console.log ("friend difference is " + bestMatch.matchDiff);
             
         };
 
         // push user inputed data to friends array
         friendData.push(userData);
         // send match response
-        res.json(mostComp);
+        res.json(bestMatch);
     });
 
 };
