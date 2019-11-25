@@ -33,7 +33,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Name</span>
                     </div>
-                    <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+                    <input type="text" class="form-control" id="name" placeholder="Name" aria-label="Name"
                         aria-describedby="basic-addon1" required>
                 </div>
                 <label for="basic-url">Link to Photo</label>
@@ -182,9 +182,20 @@
         <hr>
 
         <footer class="footer">
-            <h4><a href="/api/friends">API Friends List</a></h4>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/api/friends">API Friends List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/thaining7/FriendFinder">Github Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/home">Home</a>
+                </li>
+            </ul>
+            <!-- <h4><a href="/api/friends">API Friends List</a></h4>
             <h4><a href="https://github.com/thaining7/FriendFinder">Github Code</a></h4>
-            <h4><a href="/index">Home</a></h4>
+            <h4><a href="/index">Home</a></h4> -->
         </footer>
 
         <div class="modal fade" id="resultsModal" role="dialog">
