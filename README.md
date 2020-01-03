@@ -77,6 +77,6 @@ module.exports = function (app) {
 
 ### Operating Instructions
 
-* Visit the home page, enter your name, and a link to your photo
+* Visit the home page, enter your name, and a link to your photo (can be a placeholder if you don't have a link)
 * Answer the survey questions and click submit 
 * The app will then calculate your best match out of a database of friends
