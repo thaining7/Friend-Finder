@@ -2,15 +2,15 @@
 
 #### Heroku App: https://trevsfriendfinder.herokuapp.com/
 
-# Description
+## Description
 
 #### Friend Finder is a full stack application that finds your most compatible match based on a series of survey questions. It uses Node.js and Express.js on the backend and JavaScript logic to compare your results and find your best match.
 
-# Screenshot
+## Screenshot
 
 ![Survey Screenshot](/app/public/assets/Screenshot.png)
 
-# Tech Used
+## Tech Used
 
 * JavaScript
 * jQuery
@@ -18,7 +18,7 @@
 * Node.js
 * Express.js
 
-# Code Example
+## Code Example
 
 #### Logic for calculating the most compatible match based on survey scores:
 
@@ -75,7 +75,7 @@ module.exports = function (app) {
 };
 ```
 
-### Operating Instructions
+## Operating Instructions
 
 * Visit the home page, enter your name, and a link to your photo (can be a placeholder if you don't have a link)
 * Answer the survey questions and click submit 
